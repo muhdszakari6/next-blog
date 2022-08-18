@@ -9,17 +9,21 @@ interface PostProps {
   data: { id: string; title: string; date: string; contentHtml: string };
 }
 
-export async function getStaticProps({ params }: { params: { post: string } }) {
+export const getStaticProps = async ({
+  params,
+}: {
+  params: { post: string };
+}) => {
   const data = await getPostData(params.post);
   return {
     props: {
       data,
     },
   };
-}
+};
 
 const Post: FunctionComponent<PostProps> = ({ data }) => {
-  const { title, id, date, contentHtml } = data;
+  const { title, date, contentHtml } = data;
   return (
     <Layout>
       <Head>
@@ -36,12 +40,12 @@ const Post: FunctionComponent<PostProps> = ({ data }) => {
   );
 };
 
-export async function getStaticPaths() {
+export const getStaticPaths = async () => {
   const paths = getAllPostIds();
   return {
     paths,
-    fallback: true,
+    fallback: false,
   };
-}
+};
 
 export default Post;

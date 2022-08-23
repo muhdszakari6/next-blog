@@ -29,7 +29,10 @@ const Home: NextPage<any> = ({
           defer
         ></script>
       </Head>
-      <div className="g-recaptcha" data-sitekey="your_site_key"></div>
+      <div
+        className="g-recaptcha"
+        data-sitekey="6LePpaAhAAAAABo4BzJL1BinrOgy6hGvdwpXRBQT"
+      ></div>
       <section className={utilStyles.headingMd}>
         <p>
           Hi 😄, I am Salim! I am a Frontend Engineer with flair for Software

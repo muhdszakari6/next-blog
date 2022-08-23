@@ -23,7 +23,13 @@ const Home: NextPage<any> = ({
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <script
+          src="https://www.google.com/recaptcha/api.js"
+          async
+          defer
+        ></script>
       </Head>
+      <div className="g-recaptcha" data-sitekey="your_site_key"></div>
       <section className={utilStyles.headingMd}>
         <p>
           Hi 😄, I am Salim! I am a Frontend Engineer with flair for Software

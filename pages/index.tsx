@@ -35,7 +35,7 @@ const Home: NextPage<any> = ({
       ></div>
       <section className={utilStyles.headingMd}>
         <p>
-          Hi 😄, I am Salim! I am a Frontend Engineer with flair for Software
+          Hi 😄, I am Hamza! I am a Frontend Engineer with flair for Software
           Development. Proficient in developing Frontend Applications using
           Angular, React and React Native. I enjoy building fast and efficient
           applications. I take pride in implementing features from design into
